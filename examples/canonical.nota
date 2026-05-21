@@ -1,0 +1,8 @@
+(Register (persona-spirit (0 1 0) (0 1 1) persona-spirit-0-1-0-to-0-1-1 Enabled))
+(Allow (persona-spirit (0 1 0) (0 1 1)))
+(Block (persona-spirit (0 1 0) (0 1 2) Unsafe))
+(Query All)
+(Registered (persona-spirit (0 1 0) (0 1 1) persona-spirit-0-1-0-to-0-1-1 Enabled))
+(Allowed (persona-spirit (0 1 0) (0 1 1)))
+(Blocked (persona-spirit (0 1 0) (0 1 2) Unsafe))
+(PolicyReported ([(persona-spirit (0 1 0) (0 1 1) Enabled)]))

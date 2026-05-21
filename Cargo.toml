@@ -1,0 +1,26 @@
+[package]
+name         = "owner-signal-sema-upgrade"
+version      = "0.1.0"
+edition      = "2024"
+rust-version = "1.85"
+license      = "MIT OR Apache-2.0"
+repository   = "https://github.com/LiGoldragon/owner-signal-sema-upgrade"
+description  = "Owner-only policy signal contract for sema-upgrade."
+publish      = false
+
+[lib]
+name = "owner_signal_sema_upgrade"
+path = "src/lib.rs"
+
+[dependencies]
+nota-codec          = { git = "https://github.com/LiGoldragon/nota-codec.git", branch = "main" }
+rkyv                = { version = "0.8", default-features = false, features = ["std", "bytecheck", "little_endian", "pointer_width_32", "unaligned"] }
+signal-frame        = { git = "https://github.com/LiGoldragon/signal-frame.git", branch = "main" }
+signal-sema         = { git = "https://github.com/LiGoldragon/signal-sema.git", branch = "main" }
+signal-sema-upgrade = { git = "https://github.com/LiGoldragon/signal-sema-upgrade.git", branch = "main" }
+thiserror           = "2"
+
+[lints.rust]
+unsafe_code = "forbid"
+unused      = { level = "warn", priority = -1 }
+dead_code   = "warn"
